@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="div"> I am normal pre-added text in div. </div>
+
+    <div id="div2" >  I am div with hidden span tag. <span style="display: none;" > I am display none tag!  </span>  </div>
+
+    <script>
+
+        const div = document.getElementById('div')
+        const div2 = document.getElementById('div2')
+        // div.innerText = 'Text set by &lt;b&gt;JS&lt;/b&gt!'
+        div.innerHTML = 'Text set by &lt;b&gt;JS&lt;/b&gt!'
+        console.log(div.innerText)
+        console.log(div.innerHTML)
+        console.log(div.textContent)
+
+        console.log(div2.innerText)
+        console.log(div2.innerHTML)
+        console.log(div2.textContent)
+
+
+
+    </script>
+    
+</body>
+</html>
